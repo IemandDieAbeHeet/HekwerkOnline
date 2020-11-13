@@ -18,7 +18,7 @@ if(isset($_POST['submit'])) {
     $mail->Port       = 587;
     $mail->Host       = "smtp.gmail.com";
     $mail->Username   = "abe.vriens2@gmail.com";
-    $mail->Password   = "hpqCaD123";
+    $mail->Password   = file_get_contents("../has.txt");
 
     $name = $_POST['name'];
     $subject = $_POST['subject'];
