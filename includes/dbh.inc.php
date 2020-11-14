@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $dBUsername = "root";
-$dBPassword = file_get_contents("../has.txt") + "!";
+$dBPassword = file_get_contents("E:/XAMPP/htdocs/has.txt") . "!";
 $dBName = "hekwerkonline";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
